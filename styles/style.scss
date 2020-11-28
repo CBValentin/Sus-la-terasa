@@ -1,0 +1,51 @@
+$header1: 7rem;
+$header2: 5rem;
+$header3: 4rem;
+$header4: 2rem;
+$listsize: 2.5rem;
+$navgradient: linear-gradient(bottom, #2D2926FF, #E94B3CFF);
+
+@font-face {
+    src: url(/fonts/Lobster-Regular.ttf);
+    font-family: "Lobster";
+}
+@font-face {
+    src: url(/fonts/Poppins-Medium.ttf);
+    font-family: "Poppins-Medium", sans-serif;
+}
+@font-face {
+    src: url(/fonts/Poppins-Thin.ttf);
+    font-family: "Poppins-Thin", sans-serif;
+}
+
+@mixin buttonhero() {
+    padding: 1.5rem 4rem;
+    outline-style: none;
+    border-style: none;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin card() {
+  width:22.5%;
+  min-height:70vh;
+  background: #2D2926FF;
+  border-radius: 1rem;
+  color:rgb(253, 234, 234);
+  box-shadow: 6px 6px 10px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@import "global";
+@import "intro";
+@import "menu";
+

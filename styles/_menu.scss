@@ -1,0 +1,86 @@
+#menu {
+    background: #E94B3CFF;
+    @include flex(row, space-evenly, center);
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+.card1 {
+    @include card();
+    .card-header {
+        padding: 2rem 0;
+        display: block;
+        margin: 0 auto;
+        font-family: "Poppins-Medium", sans-serif;
+    }
+    .menu-line {
+        padding: 1.5rem 1rem;
+        h4 {
+            padding-bottom: .5rem;
+        }
+        p {
+            padding-top: 1rem;
+            font-size: 1.4rem;
+            font-family: "Poppins-Thin", sans-serif;
+        }
+    }
+}
+.card2 {
+    @include card();
+    .card-header {
+        padding: 2rem 0;
+        display: block;
+        margin: 0 auto;
+        font-family: "Poppins-Medium", sans-serif;
+    }
+    .menu-line {
+        padding: 1.5rem 1rem;
+        h4 {
+            padding-bottom: .5rem;
+        }
+        p {
+            padding-top: 1rem;
+            font-size: 1.4rem;
+            font-family: "Poppins-Thin", sans-serif;
+        }
+    }
+}
+.card3 {
+    @include card();
+    .card-header {
+        padding: 2rem 0;
+        display: block;
+        margin: 0 auto;
+        font-family: "Poppins-Medium", sans-serif;
+    }
+    .menu-line {
+        padding: 1.5rem 1rem;
+        h4 {
+            padding-bottom: .5rem;
+        }
+        p {
+            padding-top: 1rem;
+            font-size: 1.4rem;
+            font-family: "Poppins-Thin", sans-serif;
+        }
+    }
+}
+.card4 {
+    @include card();
+    .card-header {
+        padding: 2rem 0;
+        display: block;
+        margin: 0 auto;
+        font-family: "Poppins-Medium", sans-serif;
+    }
+    .menu-line {
+        padding: 1.5rem 1rem;
+        h4 {
+            padding-bottom: .5rem;
+        }
+        p {
+            padding-top: 1rem;
+            font-size: 1.4rem;
+            font-family: "Poppins-Thin", sans-serif;
+        }
+    }
+}

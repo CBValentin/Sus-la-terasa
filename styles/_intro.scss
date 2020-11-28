@@ -1,0 +1,73 @@
+header {
+    width: 100%;
+    background: $navgradient;
+}
+nav {
+    width: 90%;
+    min-height: 10vh;
+    margin: 0 auto;
+    @include flex(row, space-between, center);
+}
+ul {
+    flex: 1 1 40rem;
+    @include flex(row, space-evenly, center);
+    font-size: $listsize;
+    li{
+        border-left: 1px solid #2D2926FF;
+        padding-left: 1.5rem;
+    }
+    a {
+        color: black;
+        font-family: "Poppins-Medium", sans-serif;
+        &:hover {
+            text-shadow: 1px 1px 5px#2D2926FF;
+        }
+    }
+}
+.nav-logo {
+    flex: 1 1 40rem;
+}
+.hero {
+    position: relative;
+    min-height: 90vh;
+    @include flex(column, center, center);
+    background: linear-gradient(top, #2D2926FF, #E94B3CFF);
+    z-index: -2;
+    .pizza {
+        position: absolute;
+        top: 10%;
+        left: -20%;
+        z-index: -1;
+        height: 80%;
+    }
+    h1 {
+        font-family: "Lobster";
+    }
+    span {
+        font-size: 10rem;
+        margin: 0;
+        display: block;
+    }
+    .button-hero {
+        @include buttonhero();
+        margin: 4rem 0 0.5rem;
+        background-color: #2D2926FF;
+        color: #E94B3CFF;
+        transition: all 350ms ease-in-out;
+        cursor: pointer;
+        &:hover {
+            font-size: 2.15rem;
+            box-shadow: 4px 4px 6px #000000;
+        }
+    }
+    .hero-social {
+        padding: 2rem;
+        a {
+            padding-right: 1rem;
+            &:hover {
+                text-shadow: 4px 4px 6px #000000 ;
+            }
+        }
+    }
+}
+
