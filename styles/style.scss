@@ -34,7 +34,8 @@ $navgradient: linear-gradient(bottom, #2D2926FF, #E94B3CFF);
 }
 
 @mixin card() {
-  width:22.5%;
+  width:80%;
+  margin: auto;
   min-height:70vh;
   background: #2D2926FF;
   border-radius: 1rem;
@@ -49,3 +50,115 @@ $navgradient: linear-gradient(bottom, #2D2926FF, #E94B3CFF);
 @import "intro";
 @import "menu";
 
+@keyframes intro {
+    from {
+        opacity: .8;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes spoon {
+    from {
+        bottom: -22%;
+    }
+    to {
+        bottom: 0%;
+    }
+}
+@keyframes lemon {
+    from {
+        transform: scaleY(-1) rotateZ(0deg) translatey(-80%) translateX(-50%);
+    }
+    to {
+        transform: scaleY(-1) rotateZ(55deg) translatey(0%) translateX(0%);
+    }
+}
+@keyframes tomato {
+    from {
+        transform: scaleY(-1) rotateZ(0deg) translateX(-50%) translatey(-80%);
+    }
+    to {
+        transform: scaleY(-1) rotateZ(35deg) translateX(25%) translatey(0%);
+    }
+}
+@keyframes grass {
+    from {
+        transform: scaleY(-1) rotateZ(0deg) translateX(-50%) translatey(-80%);
+    }
+    to {
+        transform: scaleY(-1) rotateZ(15deg) translateX(50%) translatey(0%);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 50%;
+    }
+    .pizza {
+        display: none;
+    }
+    .lemons,
+    .tomato,
+    .grass {
+        display: none;
+    }
+    .spoons {
+        width: 80%;
+    }
+    .nav-logo {
+        text-align: center;
+        margin-top: 1rem;
+        img {
+            width: 100px;
+            height: 67px;
+        }
+    }
+    ul {
+        margin: 1.5rem auto;
+    }
+    .menu1 {
+        margin: 3rem auto;
+        height: inherit;
+        .card1 {
+            min-height: 100%;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+    .menu2 {
+        margin: 3rem auto;
+        height: inherit;
+        .card2 {
+            min-height: 100%;
+            
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+    .menu3 {
+        margin: 3rem auto;
+        height: inherit;
+        .card3 {
+            min-height: 100%;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+    .menu4 {
+        margin: 3rem auto;
+        height: inherit;
+        .card4 {
+            min-height: 100%;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+    }
+}

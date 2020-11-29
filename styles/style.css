@@ -22,6 +22,8 @@
 
 html {
   font-size: 62.5%;
+  -webkit-animation: intro 350ms ease-in-out;
+          animation: intro 350ms ease-in-out;
 }
 
 li {
@@ -71,6 +73,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 ul {
@@ -132,6 +136,7 @@ ul a:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#2D2926FF), to(#E94B3CFF));
   background: linear-gradient(top, #2D2926FF, #E94B3CFF);
   z-index: -2;
+  overflow: hidden;
 }
 
 .hero .pizza {
@@ -144,11 +149,11 @@ ul a:hover {
 
 .hero h1 {
   font-family: "Lobster";
+  margin: 0 0 1rem;
 }
 
 .hero span {
   font-size: 10rem;
-  margin: 0;
   display: block;
 }
 
@@ -174,6 +179,7 @@ ul a:hover {
 
 .hero .hero-social {
   padding: 2rem;
+  margin-bottom: 10rem;
 }
 
 .hero .hero-social a {
@@ -182,6 +188,43 @@ ul a:hover {
 
 .hero .hero-social a:hover {
   text-shadow: 4px 4px 6px #000000;
+}
+
+.hero .spoons {
+  position: absolute;
+  bottom: 0%;
+  -webkit-animation: spoon 1s ease-in-out;
+          animation: spoon 1s ease-in-out;
+}
+
+.hero .lemons {
+  position: absolute;
+  bottom: -20%;
+  -webkit-transform: scaleY(-1) rotateZ(55deg);
+          transform: scaleY(-1) rotateZ(55deg);
+  right: 5%;
+  -webkit-animation: lemon 1s ease-in-out;
+          animation: lemon 1s ease-in-out;
+}
+
+.hero .tomato {
+  position: absolute;
+  bottom: -15%;
+  -webkit-transform: scaleY(-1) rotateZ(35deg) translateX(25%);
+          transform: scaleY(-1) rotateZ(35deg) translateX(25%);
+  right: 4%;
+  -webkit-animation: tomato 1s ease-in-out;
+          animation: tomato 1s ease-in-out;
+}
+
+.hero .grass {
+  position: absolute;
+  bottom: -6%;
+  -webkit-transform: scaleY(-1) rotateZ(15deg) translateX(50%);
+          transform: scaleY(-1) rotateZ(15deg) translateX(50%);
+  right: 2%;
+  -webkit-animation: grass 1s ease-in-out;
+          animation: grass 1s ease-in-out;
 }
 
 #menu {
@@ -204,8 +247,20 @@ ul a:hover {
       flex-wrap: wrap;
 }
 
+.menu-head {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 140rem;
+          flex: 1 1 140rem;
+  font-family: "Poppins-Medium", sans-serif;
+  text-align: center;
+  padding: 3rem 0 2rem;
+  color: #2D2926FF;
+  text-shadow: 4px 4px 8px #fdeaea;
+}
+
 .card1 {
-  width: 22.5%;
+  width: 80%;
+  margin: auto;
   min-height: 70vh;
   background: #2D2926FF;
   border-radius: 1rem;
@@ -246,7 +301,8 @@ ul a:hover {
 }
 
 .card2 {
-  width: 22.5%;
+  width: 80%;
+  margin: auto;
   min-height: 70vh;
   background: #2D2926FF;
   border-radius: 1rem;
@@ -287,7 +343,8 @@ ul a:hover {
 }
 
 .card3 {
-  width: 22.5%;
+  width: 80%;
+  margin: auto;
   min-height: 70vh;
   background: #2D2926FF;
   border-radius: 1rem;
@@ -328,7 +385,8 @@ ul a:hover {
 }
 
 .card4 {
-  width: 22.5%;
+  width: 80%;
+  margin: auto;
   min-height: 70vh;
   background: #2D2926FF;
   border-radius: 1rem;
@@ -366,5 +424,203 @@ ul a:hover {
   padding-top: 1rem;
   font-size: 1.4rem;
   font-family: "Poppins-Thin", sans-serif;
+}
+
+.menu1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.menu2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.menu3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.menu4 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+@-webkit-keyframes intro {
+  from {
+    opacity: .8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes intro {
+  from {
+    opacity: .8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes spoon {
+  from {
+    bottom: -22%;
+  }
+  to {
+    bottom: 0%;
+  }
+}
+
+@keyframes spoon {
+  from {
+    bottom: -22%;
+  }
+  to {
+    bottom: 0%;
+  }
+}
+
+@-webkit-keyframes lemon {
+  from {
+    -webkit-transform: scaleY(-1) rotateZ(0deg) translatey(-80%) translateX(-50%);
+            transform: scaleY(-1) rotateZ(0deg) translatey(-80%) translateX(-50%);
+  }
+  to {
+    -webkit-transform: scaleY(-1) rotateZ(55deg) translatey(0%) translateX(0%);
+            transform: scaleY(-1) rotateZ(55deg) translatey(0%) translateX(0%);
+  }
+}
+
+@keyframes lemon {
+  from {
+    -webkit-transform: scaleY(-1) rotateZ(0deg) translatey(-80%) translateX(-50%);
+            transform: scaleY(-1) rotateZ(0deg) translatey(-80%) translateX(-50%);
+  }
+  to {
+    -webkit-transform: scaleY(-1) rotateZ(55deg) translatey(0%) translateX(0%);
+            transform: scaleY(-1) rotateZ(55deg) translatey(0%) translateX(0%);
+  }
+}
+
+@-webkit-keyframes tomato {
+  from {
+    -webkit-transform: scaleY(-1) rotateZ(0deg) translateX(-50%) translatey(-80%);
+            transform: scaleY(-1) rotateZ(0deg) translateX(-50%) translatey(-80%);
+  }
+  to {
+    -webkit-transform: scaleY(-1) rotateZ(35deg) translateX(25%) translatey(0%);
+            transform: scaleY(-1) rotateZ(35deg) translateX(25%) translatey(0%);
+  }
+}
+
+@keyframes tomato {
+  from {
+    -webkit-transform: scaleY(-1) rotateZ(0deg) translateX(-50%) translatey(-80%);
+            transform: scaleY(-1) rotateZ(0deg) translateX(-50%) translatey(-80%);
+  }
+  to {
+    -webkit-transform: scaleY(-1) rotateZ(35deg) translateX(25%) translatey(0%);
+            transform: scaleY(-1) rotateZ(35deg) translateX(25%) translatey(0%);
+  }
+}
+
+@-webkit-keyframes grass {
+  from {
+    -webkit-transform: scaleY(-1) rotateZ(0deg) translateX(-50%) translatey(-80%);
+            transform: scaleY(-1) rotateZ(0deg) translateX(-50%) translatey(-80%);
+  }
+  to {
+    -webkit-transform: scaleY(-1) rotateZ(15deg) translateX(50%) translatey(0%);
+            transform: scaleY(-1) rotateZ(15deg) translateX(50%) translatey(0%);
+  }
+}
+
+@keyframes grass {
+  from {
+    -webkit-transform: scaleY(-1) rotateZ(0deg) translateX(-50%) translatey(-80%);
+            transform: scaleY(-1) rotateZ(0deg) translateX(-50%) translatey(-80%);
+  }
+  to {
+    -webkit-transform: scaleY(-1) rotateZ(15deg) translateX(50%) translatey(0%);
+            transform: scaleY(-1) rotateZ(15deg) translateX(50%) translatey(0%);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 50%;
+  }
+  .pizza {
+    display: none;
+  }
+  .lemons,
+  .tomato,
+  .grass {
+    display: none;
+  }
+  .spoons {
+    width: 80%;
+  }
+  .nav-logo {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .nav-logo img {
+    width: 100px;
+    height: 67px;
+  }
+  ul {
+    margin: 1.5rem auto;
+  }
+  .menu1 {
+    margin: 3rem auto;
+    height: inherit;
+  }
+  .menu1 .card1 {
+    min-height: 100%;
+  }
+  .menu1 .card1 h2 {
+    font-size: 3rem;
+  }
+  .menu2 {
+    margin: 3rem auto;
+    height: inherit;
+  }
+  .menu2 .card2 {
+    min-height: 100%;
+  }
+  .menu2 .card2 h2 {
+    font-size: 3rem;
+  }
+  .menu3 {
+    margin: 3rem auto;
+    height: inherit;
+  }
+  .menu3 .card3 {
+    min-height: 100%;
+  }
+  .menu3 .card3 h2 {
+    font-size: 3rem;
+  }
+  .menu4 {
+    margin: 3rem auto;
+    height: inherit;
+  }
+  .menu4 .card4 {
+    min-height: 100%;
+  }
+  .menu4 .card4 h2 {
+    font-size: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

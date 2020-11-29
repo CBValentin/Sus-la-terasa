@@ -7,6 +7,7 @@ nav {
     min-height: 10vh;
     margin: 0 auto;
     @include flex(row, space-between, center);
+    flex-wrap: wrap;
 }
 ul {
     flex: 1 1 40rem;
@@ -33,6 +34,7 @@ ul {
     @include flex(column, center, center);
     background: linear-gradient(top, #2D2926FF, #E94B3CFF);
     z-index: -2;
+    overflow: hidden;
     .pizza {
         position: absolute;
         top: 10%;
@@ -42,10 +44,10 @@ ul {
     }
     h1 {
         font-family: "Lobster";
+        margin: 0 0 1rem;
     }
     span {
         font-size: 10rem;
-        margin: 0;
         display: block;
     }
     .button-hero {
@@ -62,12 +64,39 @@ ul {
     }
     .hero-social {
         padding: 2rem;
+        margin-bottom: 10rem;
         a {
             padding-right: 1rem;
             &:hover {
                 text-shadow: 4px 4px 6px #000000 ;
             }
         }
+    }
+    .spoons {
+        position: absolute;
+        bottom: 0%;
+        animation: spoon 1s ease-in-out ;
+    }
+    .lemons {
+        position: absolute;
+        bottom: -20%;
+        transform: scaleY(-1) rotateZ(55deg);
+        right: 5%;
+        animation: lemon 1s ease-in-out;
+    }
+    .tomato {
+        position: absolute;
+        bottom: -15%;
+        transform: scaleY(-1) rotateZ(35deg) translateX(25%);
+        right: 4%;
+        animation: tomato 1s ease-in-out;
+    }
+    .grass {
+        position: absolute;
+        bottom: -6%;
+        transform: scaleY(-1) rotateZ(15deg) translateX(50%);
+        right: 2%;
+        animation: grass 1s ease-in-out;
     }
 }
 

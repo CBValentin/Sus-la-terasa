@@ -4,6 +4,14 @@
     min-height: 100vh;
     flex-wrap: wrap;
 }
+.menu-head {
+    flex: 1 1 140rem;
+    font-family: "Poppins-Medium", sans-serif;
+    text-align: center;
+    padding: 3rem 0 2rem;
+    color:  #2D2926FF;
+    text-shadow: 4px 4px 8px rgb(253, 234, 234);
+}
 .card1 {
     @include card();
     .card-header {
@@ -83,4 +91,16 @@
             font-family: "Poppins-Thin", sans-serif;
         }
     }
+}
+.menu1 {
+    flex: 1 1 40rem;
+}
+.menu2 {
+    flex: 1 1 40rem;
+}
+.menu3 {
+    flex: 1 1 40rem;
+}
+.menu4 {
+    flex: 1 1 40rem;
 }
