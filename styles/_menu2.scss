@@ -1,0 +1,144 @@
+#menu2 {
+    min-height: 100vh;
+    background: linear-gradient(top, #E94B3CFF, #F1F4FFFF);
+}
+.pizza-menu {
+    @include flex(row, space-evenly, center);
+    flex-wrap: wrap;
+    .menu-container {
+        flex: 1 1 40rem;
+        position: relative;
+        padding: 5rem 1.5rem;
+        h4{
+            position: absolute;
+            font-size: 3rem;
+            font-family: "Poppins-Medium", sans-serif;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #E94B3CFF;
+            z-index: 1;
+            -webkit-text-fill-color: rgb(255, 255, 255);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+        img {
+            width: 398.523px;
+            height: 265.881px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: all 350ms ease-in-out;
+            filter: grayscale(0);
+            &:hover {
+                filter: grayscale(100%)
+            }
+        }
+    }
+}
+.kebab-menu {
+    @include flex(row, space-evenly, center);
+    flex-wrap: wrap;
+    .menu-container {
+        flex: 1 1 40rem;
+        position: relative;
+        padding: 5rem 1.5rem;
+        h4{
+            position: absolute;
+            font-size: 3rem;
+            font-family: "Poppins-Medium", sans-serif;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #E94B3CFF;
+            z-index: 1;
+            -webkit-text-fill-color: rgb(255, 255, 255);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+        img {
+            width: 398.523px;
+            height: 265.881px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: all 350ms ease-in-out;
+            filter: grayscale(0);
+            &:hover {
+                filter: grayscale(100%)
+            }
+        }
+    }
+}
+.sides-menu {
+    @include flex(row, space-evenly, center);
+    flex-wrap: wrap;
+    .menu-container {
+        flex: 1 1 40rem;
+        position: relative;
+        padding: 5rem 1.5rem;
+        h4{
+            position: absolute;
+            font-size: 3rem;
+            font-family: "Poppins-Medium", sans-serif;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #E94B3CFF;
+            z-index: 1;
+            -webkit-text-fill-color: rgb(255, 255, 255);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+        img {
+            width: 398.523px;
+            height: 265.881px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: all 350ms ease-in-out;
+            filter: grayscale(0);
+            &:hover {
+                filter: grayscale(100%)
+            }
+        }
+    }
+}
+.drinks-menu {
+    @include flex(row, space-evenly, center);
+    flex-wrap: wrap;
+    .menu-container {
+        flex: 1 1 40rem;
+        position: relative;
+        padding: 5rem 1.5rem;
+        h4{
+            position: absolute;
+            font-size: 3rem;
+            font-family: "Poppins-Medium", sans-serif;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #E94B3CFF;
+            z-index: 1;
+            -webkit-text-fill-color: rgb(255, 255, 255);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+        img {
+            width: 398.523px;
+            height: 265.881px;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: all 350ms ease-in-out;
+            filter: grayscale(0);
+            &:hover {
+                filter: grayscale(100%)
+            }
+        }
+    }
+}

@@ -14,11 +14,11 @@ ul {
     @include flex(row, space-evenly, center);
     font-size: $listsize;
     li{
-        border-left: 1px solid #2D2926FF;
+        border-left: 1px solid #F1F4FFFF;
         padding-left: 1.5rem;
     }
     a {
-        color: black;
+        color: #F1F4FFFF;
         font-family: "Poppins-Medium", sans-serif;
         &:hover {
             text-shadow: 1px 1px 5px#2D2926FF;
@@ -35,16 +35,31 @@ ul {
     background: linear-gradient(top, #2D2926FF, #E94B3CFF);
     z-index: -2;
     overflow: hidden;
-    .pizza {
+    .intro-left {
         position: absolute;
-        top: 10%;
-        left: -20%;
-        z-index: -1;
-        height: 80%;
+        top: 20%;
+        left: 5%;
+        z-index: -1;      
+        #man {
+            animation: man 1s ease-in-out;
+        }
+        #hat {
+            animation: hat 1s ease-in-out;
+        }
+        #left {
+            animation: left 1s ease-in-out;
+        }
+        #left {
+            animation: salt 2s ease-in-out infinite alternate;
+        }
+        #right {
+            animation: salt 2s ease-in-out infinite alternate-reverse 1s;
+        } 
     }
     h1 {
         font-family: "Lobster";
         margin: 0 0 1rem;
+        color: #F1F4FFFF;
     }
     span {
         font-size: 10rem;

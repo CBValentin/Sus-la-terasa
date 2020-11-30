@@ -49,6 +49,7 @@ $navgradient: linear-gradient(bottom, #2D2926FF, #E94B3CFF);
 @import "global";
 @import "intro";
 @import "menu";
+@import "menu2";
 
 @keyframes intro {
     from {
@@ -58,6 +59,31 @@ $navgradient: linear-gradient(bottom, #2D2926FF, #E94B3CFF);
         opacity: 1;
     }
 }
+@keyframes man {
+    from {
+        transform: translatey(-20%);
+    }
+    to {
+        transform: translatey(0%);
+    }
+}
+@keyframes hat {
+    from {
+        transform: translatey(20%);
+    }
+    to {
+        transform: translatey(0%);
+    }
+}
+@keyframes salt {
+    from {
+        transform: translatey(-7%);
+    }
+    to {
+        transform: translatey(0%);
+    }
+}
+
 @keyframes spoon {
     from {
         bottom: -22%;
@@ -113,12 +139,12 @@ $navgradient: linear-gradient(bottom, #2D2926FF, #E94B3CFF);
         text-align: center;
         margin-top: 1rem;
         img {
-            width: 100px;
-            height: 67px;
+            width: 150px;
+            height: 60px;
         }
     }
     ul {
-        margin: 1.5rem auto;
+        margin: 2rem auto;
     }
     .menu1 {
         margin: 3rem auto;
@@ -160,5 +186,11 @@ $navgradient: linear-gradient(bottom, #2D2926FF, #E94B3CFF);
                 font-size: 3rem;
             }
         }
+    }
+    .intro-left {
+        display: none;
+    }
+    .menu-container {
+        text-align: center;
     }
 }
