@@ -3,12 +3,23 @@
     background: linear-gradient(top, #E94B3CFF, #F1F4FFFF);
 }
 .pizza-menu {
-    @include flex(row, space-evenly, center);
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
     .menu-container {
-        flex: 1 1 40rem;
         position: relative;
-        padding: 5rem 1.5rem;
+        background: rgba(255, 255, 255, 1);
+        transition: all 1s ease-in-out;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+        &:hover h4{
+            -webkit-text-fill-color: rgba(0, 0, 0, 1);
+        }
+        &:hover .image {
+            opacity: 0;
+        }
         h4{
             position: absolute;
             font-size: 3rem;
@@ -16,24 +27,16 @@
             top:50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #E94B3CFF;
             z-index: 1;
             -webkit-text-fill-color: rgb(255, 255, 255);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: black;
         }
-        img {
-            width: 398.523px;
+        .image {
+            display: block;
+            width: 358.523px;
             height: 265.881px;
-            max-width: 100%;
-            max-height: 100%;
             object-fit: cover;
             object-position: center;
-            transition: all 350ms ease-in-out;
-            filter: grayscale(0);
-            &:hover {
-                filter: grayscale(100%)
-            }
+            
         }
     }
 }
